@@ -18,7 +18,7 @@ city = os.getenv('CITY')
 weather_apikey = os.getenv('WEATHER_APIKEY')
 wai = weather_apikey
 # 生日，最终日倒数
-# birthday = os.getenv('BIRTHDAY')
+birthday = os.getenv('BIRTHDAY')
 end_date = os.getenv('END_DATE')
 
 app_id = os.getenv('APP_ID')
@@ -199,18 +199,18 @@ data = {
     "color": get_random_color()
   },
   # 正计时
-  # "having_day": {
-  #   "value": get_memorial_days_count(),
-  #   "color": get_random_color()
-  # },
+   "having_day": {
+     "value": get_memorial_days_count(),
+     "color": get_random_color()
+   },
   # 每日一言
   "words": {
     "value": get_words(),
     "color": get_random_color()
   },
-  # 倒计时
-  # "endday_left": get_counter_left,
-  # "color": get_random_color()
+   倒计时
+   "endday_left": get_counter_left,
+   "color": get_random_color()
 }
 
 # 倒计时添加到数据
